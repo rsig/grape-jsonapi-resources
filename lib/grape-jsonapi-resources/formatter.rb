@@ -82,7 +82,7 @@ module Grape
         end
 
         def resources_cache
-          @resources_cache ||= ThreadSafe::Cache.new
+          @resources_cache ||= TS::Cache.new
         end
 
         def get_resource_for(klass)
